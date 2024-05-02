@@ -1,9 +1,9 @@
-package com.github.fallingrock.copysql.services
+package net.fallingrock.copysql.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.fallingrock.copysql.MyBundle
+import net.fallingrock.copysql.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

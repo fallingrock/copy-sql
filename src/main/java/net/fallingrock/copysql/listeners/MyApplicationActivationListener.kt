@@ -1,4 +1,4 @@
-package com.github.fallingrock.copysql.listeners
+package net.fallingrock.copysql.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

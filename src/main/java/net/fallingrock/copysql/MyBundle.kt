@@ -1,4 +1,4 @@
-package com.github.fallingrock.copysql
+package net.fallingrock.copysql
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

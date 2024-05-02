@@ -1,4 +1,4 @@
-package com.github.fallingrock.copysql.toolWindow
+package net.fallingrock.copysql.listeners.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,9 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.fallingrock.copysql.MyBundle
-import com.github.fallingrock.copysql.services.MyProjectService
+import com.sun.java.accessibility.util.AWTEventMonitor.addActionListener
+import net.fallingrock.copysql.MyBundle
+import net.fallingrock.copysql.services.MyProjectService
 import javax.swing.JButton
 
 

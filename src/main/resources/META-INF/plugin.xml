@@ -1,6 +1,6 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.fallingrock.copysql</id>
+    <id>net.fallingrock.copysql</id>
     <name>copy-sql</name>
     <vendor>fallingrock</vendor>
 
@@ -9,10 +9,17 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.fallingrock.copysql.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="net.fallingrock.copysql.listeners.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.fallingrock.copysql.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="net.fallingrock.copysql.listeners.MyApplicationActivationListener"
+            topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="net.fallingrock.copysql.action.CopyAction" class="net.fallingrock.copysql.action.CopyAction"
+            text="Copy Sql">
+            <add-to-group group-id="Copy.Paste.Special" anchor="last" />
+        </action>
+    </actions>
 </idea-plugin>
